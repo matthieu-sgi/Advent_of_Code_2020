@@ -55,7 +55,7 @@ if __name__ == "__main__":
         if(w==True and arr[i] == True):
             w = False
         if(w==False and arr[i] == None):
-            seat = i
+            seat = i +1
     print(seat)
                 
         
