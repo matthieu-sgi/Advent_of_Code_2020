@@ -1,4 +1,4 @@
-import re
+import re, os
 
 def get_clean_string(input):
     retour =re.split('-|,|: | |\n',input)
@@ -9,7 +9,8 @@ def get_clean_string(input):
 
 
 if __name__ == "__main__":
-    file = open('D:/Documents/RTU/Data_Structures/Advent_of_Code_2020/2/input.txt','r')
+    file = open(os.path.join(os.path.dirname(__file__),'input.txt'),'r')
+
 
     text = file.readlines()
     main_counter = 0

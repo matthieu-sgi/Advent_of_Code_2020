@@ -1,3 +1,4 @@
+import os
 
 def max(text):
     max = 0
@@ -25,7 +26,8 @@ def max(text):
 
 
 if __name__ == "__main__":
-    file = open('D:/Documents/RTU/Data_Structures/Advent_of_Code_2020/5/input.txt','r')
+    file = open(os.path.join(os.path.dirname(__file__),'input.txt'),'r')
+
 
     text = file.readlines()
     # print(text)

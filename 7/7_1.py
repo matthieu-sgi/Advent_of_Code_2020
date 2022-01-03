@@ -1,4 +1,6 @@
 ############################ NOT WORKING #################################
+import os
+
 def clear_tab(text):
     clear_tab_result = []
     for line in text:
@@ -10,7 +12,8 @@ def count(line):
     return True if line.find("shiny gold") != -1 else False
 
 if __name__ == "__main__":
-    file = open('D:/Documents/RTU/Data_Structures/Advent_of_Code_2020/7/input.txt','r')
+    file = open(os.path.join(os.path.dirname(__file__),'input.txt'),'r')
+
 
     text = file.readlines()
     clear_tab_result =  clear_tab(text)

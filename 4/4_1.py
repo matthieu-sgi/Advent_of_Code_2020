@@ -1,3 +1,4 @@
+import os 
 
 def clear_tab(text):
     clear_tab_result = []
@@ -39,7 +40,8 @@ def verify_case(cleared):
 
 
 if __name__ == "__main__":
-    file = open('D:/Documents/RTU/Data_Structures/Advent_of_Code_2020/4/input.txt','r')
+    file = open(os.path.join(os.path.dirname(__file__),'input.txt'),'r')
+
 
     text = file.readlines()
     counter = 0

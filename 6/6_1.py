@@ -1,3 +1,6 @@
+import os
+
+
 def clear_tab(text):
     clear_tab_result = []
     a_pass = ""
@@ -23,7 +26,8 @@ def line_counter(line):
     return len(temp)
 
 if __name__ == "__main__":
-    file = open('D:/Documents/RTU/Data_Structures/Advent_of_Code_2020/6/input.txt','r')
+    file = open(os.path.join(os.path.dirname(__file__),'input.txt'),'r')
+
 
     text = file.readlines()
     # print(clear_tab(text))

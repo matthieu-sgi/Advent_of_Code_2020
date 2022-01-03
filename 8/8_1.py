@@ -1,3 +1,5 @@
+import os
+
 def clear_tab(text):
     return_tab = []
 
@@ -37,7 +39,8 @@ def sum_acc(text):
 
 
 if __name__ == "__main__":
-    file = open('D:/Documents/RTU/Data_Structures/Advent_of_Code_2020/8/input.txt','r')
+    file = open(os.path.join(os.path.dirname(__file__),'input.txt'),'r')
+
 
     text = file.readlines()
     text = clear_tab(text)
